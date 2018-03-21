@@ -1,0 +1,1 @@
+# Core TypeScript interface definitions
