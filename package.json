@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "build/dist/index.js",
-  "typings": "build/dist/index.d.ts",
+  "typings": "src/index.tsx",
   "scripts": {
     "build": "tsc",
     "test": "node scripts/test.js --env=jsdom"
