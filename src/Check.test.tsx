@@ -1,152 +1,153 @@
-import { Assert } from './Assert';
+import { Check } from './Check';
 import { testSuites } from './TestSuites';
 
 describe('isString', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isString.shouldSucceedTestCases()) {
-            expect(Assert.isString(testSet)).toBeTruthy();
+            expect(Check.isString(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isString.shouldFailTestCases()) {
-            expect(() => Assert.isString(testSet)).toThrow(TypeError);
+            expect(Check.isString(testSet)).toBeFalsy();
         }
     });
+
 });
 
 describe('isNumber', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isNumber.shouldSucceedTestCases()) {
-            expect(Assert.isNumber(testSet)).toBeTruthy();
+            expect(Check.isNumber(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isNumber.shouldFailTestCases()) {
-            expect(() => Assert.isNumber(testSet)).toThrow(TypeError);
+            expect(Check.isNumber(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isNumeric', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isNumeric.shouldSucceedTestCases()) {
-            expect(Assert.isNumeric(testSet)).toBeTruthy();
+            expect(Check.isNumeric(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isNumeric.shouldFailTestCases()) {
-            expect(() => Assert.isNumeric(testSet)).toThrow(TypeError);
+            expect(Check.isNumeric(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isInteger', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isInteger.shouldSucceedTestCases()) {
-            expect(Assert.isInt(testSet)).toBeTruthy();
+            expect(Check.isInt(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isInteger.shouldFailTestCases()) {
-            expect(() => Assert.isInt(testSet)).toThrow(TypeError);
+            expect(Check.isInt(testSet)).toBeFalsy();
         }
     });
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isInteger.shouldSucceedTestCases()) {
-            expect(Assert.isInteger(testSet)).toBeTruthy();
+            expect(Check.isInteger(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isInteger.shouldFailTestCases()) {
-            expect(() => Assert.isInteger(testSet)).toThrow(TypeError);
+            expect(Check.isInteger(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isArray', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isArray.shouldSucceedTestCases()) {
-            expect(Assert.isArray(testSet)).toBeTruthy();
+            expect(Check.isArray(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isArray.shouldFailTestCases()) {
-            expect(() => Assert.isArray(testSet)).toThrow(TypeError);
+            expect(Check.isArray(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isObject', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isObject.shouldSucceedTestCases()) {
-            expect(Assert.isObject(testSet)).toBeTruthy();
+            expect(Check.isObject(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isObject.shouldFailTestCases()) {
-            expect(() => Assert.isObject(testSet)).toThrow(TypeError);
+            expect(Check.isObject(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isUndefined', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isUndefined.shouldSucceedTestCases()) {
-            expect(Assert.isUndefined(testSet)).toBeTruthy();
+            expect(Check.isUndefined(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isUndefined.shouldFailTestCases()) {
-            expect(() => Assert.isUndefined(testSet)).toThrow(TypeError);
+            expect(Check.isUndefined(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isNull', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isNull.shouldSucceedTestCases()) {
-            expect(Assert.isNull(testSet)).toBeTruthy();
+            expect(Check.isNull(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isNull.shouldFailTestCases()) {
-            expect(() => Assert.isNull(testSet)).toThrow(TypeError);
+            expect(Check.isNull(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isNotNull', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isNotNull.shouldSucceedTestCases()) {
-            expect(Assert.isNotNull(testSet)).toBeTruthy();
+            expect(Check.isNotNull(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isNotNull.shouldFailTestCases()) {
-            expect(() => Assert.isNotNull(testSet)).toThrow(TypeError);
+            expect(Check.isNotNull(testSet)).toBeFalsy();
         }
     });
 });
 
 describe('isBoolean', () => {
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isBoolean.shouldSucceedTestCases()) {
-            expect(Assert.isBool(testSet)).toBeTruthy();
+            expect(Check.isBool(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isBoolean.shouldFailTestCases()) {
-            expect(() => Assert.isBool(testSet)).toThrow(TypeError);
+            expect(Check.isBool(testSet)).toBeFalsy();
         }
     });
-    it('assert should succeed', () => {
+    it('should succeed', () => {
         for (const testSet of testSuites.isBoolean.shouldSucceedTestCases()) {
-            expect(Assert.isBoolean(testSet)).toBeTruthy();
+            expect(Check.isBoolean(testSet)).toBeTruthy();
         }
     });
-    it('assert should fail', () => {
+    it('should fail', () => {
         for (const testSet of testSuites.isBoolean.shouldFailTestCases()) {
-            expect(() => Assert.isBoolean(testSet)).toThrow(TypeError);
+            expect(Check.isBoolean(testSet)).toBeFalsy();
         }
     });
 });
