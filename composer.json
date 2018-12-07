@@ -1,0 +1,12 @@
+{
+    "name": "iresults/iresults-ts-core",
+    "description": "Core TypeScript library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Daniel Corn",
+            "email": "cod@iresults.li"
+        }
+    ],
+    "require": {}
+}

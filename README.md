@@ -1,1 +1,1 @@
-# Core TypeScript interface definitions
+# Core TypeScript library
