@@ -7,5 +7,5 @@ export interface Clone {
      *
      * @returns {Clone}
      */
-    clone(): Clone;
+    clone<T extends Clone = this>(): T | this;
 }
