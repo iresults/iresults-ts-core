@@ -149,7 +149,7 @@ const isObject = {
 };
 
 const isUndefined = {
-    shouldSucceedTestCases: () => {
+    shouldSucceedTestCases: (): undefined[] => {
         return [
             undefined
         ];
@@ -168,7 +168,7 @@ const isUndefined = {
 };
 
 const isNull = {
-    shouldSucceedTestCases: () => {
+    shouldSucceedTestCases: (): null[] => {
         return [
             null
         ];
@@ -198,7 +198,7 @@ const isNotNull = {
             new SomeObject()
         ];
     },
-    shouldFailTestCases: () => {
+    shouldFailTestCases: (): null[] => {
         return [
             null
         ];
