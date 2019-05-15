@@ -1,6 +1,7 @@
 {
     "name": "iresults-ts-core",
     "version": "0.2.0",
+    "license": "MIT",
     "main": "build/dist/index.js",
     "typings": "src/index.tsx",
     "scripts": {
