@@ -1,13 +1,14 @@
 {
   "name": "iresults-ts-core",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "main": "build/dist/index.js",
-  "typings": "src/index.tsx",
+  "typings": "build/dist/index.d.ts",
   "license": "MIT",
   "dependencies": {},
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
